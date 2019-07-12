@@ -1,4 +1,4 @@
-#Music Player/Shortcutter#
+# Music Player/Shortcutter #
 
 ![](https://github.com/willwade/Scripting-Recipes-for-AT/raw/master/Autohotkey/MusicSwitcher/switchMusicThumb.png)
 
@@ -20,20 +20,20 @@ It runs in the background and can be accessed by right clicking the icon in the 
 - Show the help screen (useful if you forget which keys to set your switch box up for!)
 - And set/show latched time. 
  
-##To use:##
+## To use: ##
 
 1. Download it [here](https://s3-eu-west-1.amazonaws.com/app-musicswitcher/MusicSwitchShortCutter.zip). Unzip it. Feel free to run it from your desktop or wherever - even a USB stick will do.
 2. Get your music ready in [Windows Media Player](http://windows.microsoft.com/en-us/windows/download-windows-media-player), [iTunes](http://www.apple.com/itunes/) or [VLC](http://www.videolan.org/vlc/index.html). Open one of those apps. Don’t have more than one of them     running. (NB: It doesn’t need to be in the foreground so you can do other things with other switches if needed). Note too that this works with video equally as well as music files.  Set-up a playlist of media files or just have one media file ready to be played. If you don't you may hear silence! 
 3. Configure your switch driver software (e.g. [this](http://www.sensorysoftware.com/switchdriver.html))  to convert the correct switch presses to the correct keys:
 
-###Some suggestions:###
+### Some suggestions: ###
 
 - *Timed play with 1 switch* Configure switch to F8 or 0. Configure time by pressing Control+Shift+C (Default time is 8 Seconds) or right clicking on the icon in the taskbar and selecting "SetLatchedTime". If you want to check what time is set: Control+Shift d
 - *Latching with 1 switch* Configure switch to F7 or 1
 - *Two switch Play/Stop* Configure Play switch to F3 or Left Arrow and Stop switch to F4 or Down Arrow
 - *Two switch Play/Next* Configure Play switch to F3 or Left Arrow and Next switch F6 or 3
 
-###The full shortcuts are:###
+### The full shortcuts are: ###
 
     F8 or 0 or ctrl-shift t : Play music for timed period (default 8 secs)
     Ctrl-Shift c : Config window to set the time
@@ -51,14 +51,14 @@ It runs in the background and can be accessed by right clicking the icon in the 
     
     Ctrl-Shift h : This help box
     
-##Caveats:##
+## Caveats: ##
 
 - It will stop any previous use of F keys whilst running. Just right click on the taskbar icon to exit the application.
 - If WMP/iTunes/VLC is already playing when you make the first switch hit, or you manually hit press/play after the first hit is made then you may find everything gets reversed! (i.e. Play becomes Stop!). 
 - Your switch driver software may already have a command set for one of the media programmes. e.g. the Crick USBKeys software has one for Windows Media Player and iTunes - you will need to overwrite the settings for this app to get MusicSwitcher to work.
 
 
-##Developer Notes##
+## Developer Notes ##
 
 The code is written rather quickly in [AutoHotKey](http://www.autohotkey.com/) by [will wade](http://willwa.de) you can take a look at the [source code here](https://github.com/willwade/Scripting-Recipes-for-AT/tree/master/Autohotkey/MusicSwitcher) and you are more than welcome to fork the code and adapt for your own needs. (with thanks to [this thread](http://www.autohotkey.com/community/viewtopic.php?t=23267))
 
